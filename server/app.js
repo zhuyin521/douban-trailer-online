@@ -1,9 +1,13 @@
+const ejs = require('ejs')
 const Koa = require('koa')
 const app = new Koa()
-const {htmlTpl} = require('./template')
+const {htmlTpl, ejsTpl} = require('./template')
 app.use(async (ctx, next) => {
-  ctx.type = 'text/html'
-  ctx.body = htmlTpl
+  ctx.type = 'text/html;chart=utf-8'
+  ctx.body = ejs.render(ejsTpl, {
+    you: 'Fang',
+    me: 'Qi'
+  })
 })
 
 app.listen(3333, () => {
