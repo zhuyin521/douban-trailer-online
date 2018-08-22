@@ -27,6 +27,8 @@
     "koa-session": "^5.8.2",
     "pug": "^2.0.3",
     "puppeteer": "^1.7.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
