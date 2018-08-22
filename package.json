@@ -4,13 +4,14 @@
   "description": "koa2框架从0开始构建预告片网站",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wq93/douban-trailer-online.git"
   },
-  "author": "",
+  "author": "wangqi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wq93/douban-trailer-online/issues"
@@ -24,6 +25,8 @@
     "koa": "^2.5.2",
     "koa-logger": "^3.2.0",
     "koa-session": "^5.8.2",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.7.0",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
